@@ -14,12 +14,12 @@ server:
 security:
   oauth2:
     client:
-      client-id: 7d084c00bf6fa58719d1
-      client-secret: 0c6cc0c676a1e352853ead840287e0aac94001f3
-      access-token-uri: https://github.com/login/oauth/access_token
-      user-authorization-uri: https://github.com/login/oauth/authorize
+      client-id: client
+      client-secret: secret
+      access-token-uri: http://localhost:8766/oauth/token
+      user-authorization-uri: http://localhost:8766/oauth/authorize
       client-authentication-scheme: form
     resource:
-      user-info-uri: https://api.github.com/user
+      user-info-uri: http://localhost:8767/user
       prefer-token-info: false
 

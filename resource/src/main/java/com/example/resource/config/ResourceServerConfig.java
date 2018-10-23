@@ -84,7 +84,6 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers("/user/**").authenticated() // /user/** 端点的访问必须要验证后
-                .antMatchers("/user/**").access("")
                 .and()
                 .exceptionHandling().accessDeniedHandler(new OAuth2AccessDeniedHandler());
     }
